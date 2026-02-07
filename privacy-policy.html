@@ -3,90 +3,149 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>おつかいリスト プライバシーポリシー</title>
+    <title>プライバシーポリシー - おつかいリスト</title>
     <style>
-        body { font-family: sans-serif; line-height: 1.8; padding: 20px; max-width: 900px; margin: auto; }
-        h1 { color: #333; }
-        h2 { margin-top: 30px; color: #444; }
+        body {
+            font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+            line-height: 1.8;
+            color: #333;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            background-color: #fcfcfc;
+        }
+        .container {
+            background-color: #fff;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            border: 1px solid #eee;
+        }
+        h1 {
+            font-size: 26px;
+            text-align: center;
+            border-bottom: 3px solid #4CAF50;
+            padding-bottom: 15px;
+            margin-bottom: 40px;
+            color: #2e7d32;
+        }
+        h2 {
+            font-size: 20px;
+            margin-top: 35px;
+            border-left: 5px solid #4CAF50;
+            padding-left: 15px;
+            color: #333;
+        }
+        h3 {
+            font-size: 17px;
+            margin-top: 20px;
+            color: #555;
+        }
+        p, ul {
+            margin-bottom: 20px;
+        }
+        ul {
+            padding-left: 20px;
+        }
+        li {
+            margin-bottom: 10px;
+        }
+        strong {
+            color: #000;
+        }
+        .footer {
+            margin-top: 50px;
+            padding-top: 20px;
+            border-top: 1px solid #eee;
+            font-size: 0.95em;
+        }
+        .contact-info {
+            background-color: #f1f8e9;
+            padding: 20px;
+            border-radius: 8px;
+            margin-top: 10px;
+        }
+        @media (max-width: 600px) {
+            .container { padding: 20px; }
+            h1 { font-size: 22px; }
+        }
     </style>
 </head>
 <body>
+    <div class="container">
+        <h1>おつかいリスト プライバシーポリシー</h1>
 
-<h1>おつかいリスト プライバシーポリシー</h1>
+        <section>
+            <h2>1. はじめに</h2>
+            <p>Team Float Island（以下、「当方」といいます。）が提供するアプリ「おつかいリスト」（以下、「本アプリ」）における、ユーザー情報の取り扱いについて以下の通り定めます。本アプリをご利用いただく際は、本ポリシーに同意したものとみなします。</p>
+        </section>
 
-<h2>1. はじめに</h2>
-<p>
-本プライバシーポリシーは、アプリ「おつかいリスト」（以下、「本アプリ」）におけるユーザー情報の取り扱いについて説明するものです。
-本アプリをご利用いただく際は、本ポリシーに同意したものとみなします。
-</p>
+        <section>
+            <h2>2. 取得する情報および利用目的</h2>
+            <p>本アプリでは、以下の情報を取得・利用します。</p>
 
-<h2>2. 取得する情報</h2>
+            <h3>● Google アカウント情報</h3>
+            <ul>
+                <li><strong>取得情報:</strong> メールアドレス、Googleアカウントの識別情報（UID）</li>
+                <li><strong>目的:</strong> グループ識別IDの生成、ユーザー識別、Firebase Authenticationによる認証のため。</li>
+            </ul>
 
-<h3>● Google ログインにより取得する情報</h3>
-<p>
-本アプリでは、グループ識別IDの生成およびユーザー識別のために Google アカウントでのログインを利用します。
-この際、以下の情報を取得します。
-</p>
-<ul>
-    <li>メールアドレス</li>
-    <li>Google アカウントの識別情報（UID）</li>
-</ul>
+            <h3>● 音声データ（マイク権限）</h3>
+            <ul>
+                <li><strong>取得情報:</strong> ユーザーが入力した音声データ</li>
+                <li><strong>目的:</strong> 音声による商品登録機能を提供するため。</li>
+                <li><strong>取扱い:</strong> 音声はテキスト変換処理にのみ使用され、録音された音声データ自体を当方のサーバーに保存したり、第三者に提供したりすることはありません。</li>
+            </ul>
 
-<h3>● QRコード読み取りデータ</h3>
-<p>
-本アプリでは、アプリ間でグループを共有するために使用するグループ識別用IDコードを QR コードとして読み取り、入力します。
-読み取る内容は以下に限定されます。
-</p>
-<ul>
-    <li>本アプリが生成したグループ識別用IDコードのみ</li>
-</ul>
+            <h3>● QRコード読み取りデータ（カメラ権限）</h3>
+            <ul>
+                <li><strong>取得情報:</strong> アプリ内で生成されたグループ識別用IDコード</li>
+                <li><strong>目的:</strong> アプリ間でグループを共有するため。</li>
+                <li><strong>取扱い:</strong> カメラ映像はQRコードの解析のみに使用され、画像として保存・送信されることはありません。</li>
+            </ul>
+        </section>
 
-<h2>3. 情報の利用目的</h2>
-<ul>
-    <li>グループ識別IDの生成、登録、共有</li>
-    <li>グループ機能の提供および管理</li>
-    <li>Firebase Authentication によるユーザー認証</li>
-    <li>Firebase Firestore によるデータ保存および同期</li>
-    <li>アプリの安全な利用のためのユーザー識別</li>
-</ul>
+        <section>
+            <h2>3. 情報の保存および外部送信について</h2>
+            <p>取得した情報は、アプリの機能提供およびデータ同期のため、以下のサービスに保存・蓄積されます。</p>
+            <ul>
+                <li><strong>Firebase Authentication:</strong> 認証情報（メールアドレス、UID）の管理</li>
+                <li><strong>Firebase Firestore:</strong> グループ識別IDおよびアプリ内データの保存・同期</li>
+            </ul>
+        </section>
 
-<h2>4. 情報の保存について</h2>
-<p>取得した情報は以下のサービスに保存されます。</p>
-<ul>
-    <li>Firebase Authentication（メールアドレス、UID）</li>
-    <li>Firebase Firestore（グループ識別IDおよびアプリ内データ）</li>
-</ul>
+        <section>
+            <h2>4. デバイス権限の利用について</h2>
+            <ul>
+                <li><strong>カメラ（android.permission.CAMERA）:</strong> QRコード読み取りのために使用します。許可しない場合、QRコードによるグループ共有機能は利用できません。</li>
+                <li><strong>マイク（android.permission.RECORD_AUDIO）:</strong> 音声入力機能のために使用します。許可しない場合、音声での商品登録機能は利用できません。</li>
+            </ul>
+        </section>
 
-<h2>5. 第三者への提供について</h2>
-<p>
-本アプリは、以下の場合を除き、取得した情報を第三者へ提供することはありません。
-</p>
-<ul>
-    <li>法令に基づく場合</li>
-    <li>ユーザーの同意がある場合</li>
-</ul>
-<p>
-Firebase への保存はアプリの機能提供のための委託に該当し、第三者提供には該当しません。
-</p>
+        <section>
+            <h2>5. 第三者への提供について</h2>
+            <p>本アプリは、以下の場合を除き、取得した情報を第三者へ提供することはありません。</p>
+            <ul>
+                <li>法令に基づく場合。</li>
+                <li>ユーザーの同意がある場合。</li>
+            </ul>
+            <p>※Firebaseへのデータ保存は、アプリの機能提供のための委託に該当し、第三者提供には該当しません。</p>
+        </section>
 
-<h2>6. カメラの利用について</h2>
-<p>
-本アプリは QR コード読み取りのためにカメラ権限（android.permission.CAMERA）を使用します。
-カメラ映像は QR コード解析のみに使用され、外部に送信されることはありません。
-ユーザーがカメラ権限を許可しない場合、QRコード読み取り機能は利用できません。
-</p>
+        <section>
+            <h2>6. プライバシーポリシーの変更</h2>
+            <p>本ポリシーの内容は、法令の改正やサービス内容の変更に基づき、必要に応じて変更される場合があります。変更後の内容は、本アプリ内または公開ページにて告知した時点から効力を生じるものとします。</p>
+        </section>
 
-<h2>7. お問い合わせ</h2>
-<p>
-本アプリのプライバシーに関するお問い合わせは、以下のメールアドレスまでお願いいたします。<br>
-<strong>teamfloatisland@gmail.com</strong>
-</p>
-
-<h2>8. プライバシーポリシーの変更</h2>
-<p>
-本プライバシーポリシーの内容は、必要に応じて変更される場合があります。
-変更後の内容は、本アプリまたは公開ページにて告知します。
-</p>
-
+        <div class="footer">
+            <h2>7. お問い合わせ</h2>
+            <p>本ポリシーおよび個人情報の取り扱いに関するお問い合わせは、以下の窓口までお願いいたします。</p>
+            <div class="contact-info">
+                <strong>開発者:</strong> Team Float Island<br>
+                <strong>メールアドレス:</strong> teamfloatisland@gmail.com<br>
+                <strong>Webサイト:</strong> <a href="https://teamfloatisland.github.io/otsukai-list-privacy/">https://teamfloatisland.github.io/otsukai-list-privacy/</a>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
